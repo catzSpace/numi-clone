@@ -1,0 +1,52 @@
+ARS	Argentine Peso
+AUD	Australian Dollar
+BCH	Bitcoin Cash
+BGN	Bulgarian Lev
+BNB	Binance Coin
+BRL	Brazilian Real
+BTC	Bitcoin
+CAD	Canadian Dollar
+CHF	Swiss Franc
+CNY	Chinese Yuan
+CYP	Cypriot Pound
+CZK	Czech Republic Koruna
+DKK	Danish Krone
+DOGE	Dogecoin
+DZD	Algerian Dinar
+EEK	Estonian Kroon
+ETH	Ethereum
+EUR	Euro
+GBP	British Pound Sterling
+GRD	Greek Drachma
+HKD	Hong Kong Dollar
+HRK	Croatian Kuna
+HUF	Hungarian Forint
+IDR	Indonesian Rupiah
+ILS	Israeli New Sheqel
+INR	Indian Rupee
+ISK	Icelandic Króna
+JPY	Japanese Yen
+KRW	South Korean Won
+LTC	Litecoin
+LTL	Lithuanian Litas
+LVL	Latvian Lats
+MAD	Moroccan Dirham
+MTL	Maltese Lira
+MXN	Mexican Peso
+MYR	Malaysian Ringgit
+NOK	Norwegian Krone
+NZD	New Zealand Dollar
+PHP	Philippine Peso
+PLN	Polish Zloty
+RON	Romanian Leu
+RUB	Russian Ruble
+SEK	Swedish Krona
+SGD	Singapore Dollar
+SIT	Slovenian Tolar
+SKK	Slovak Koruna
+THB	Thai Baht
+TRY	Turkish Lira
+TWD	New Taiwan Dollar
+USD	United States Dollar
+XRP	Ripple
+ZAR	South African Rand
