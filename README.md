@@ -22,18 +22,11 @@ instalar las dependencias tkinter, sympy
 pip install tkinter sympy
 ```
 
-agregar la el token de acceso de la api de [abstractApi](https://www.abstractapi.com/a/home?utm_source=google&utm_medium=cpc&utm_campaign=branded&utm_term=abstract%20api&gad_source=1&gclid=EAIaIQobChMItcegm5bSiQMVfqFaBR2qEzE8EAAYASAAEgK-E_D_BwE)
+agregar la api key de acceso de la api Exchanges-Rates de [abstractApi](https://www.abstractapi.com/a/home?utm_source=google&utm_medium=cpc&utm_campaign=branded&utm_term=abstract%20api&gad_source=1&gclid=EAIaIQobChMItcegm5bSiQMVfqFaBR2qEzE8EAAYASAAEgK-E_D_BwE)
 y ubicarla en el archivo fetch.js en el siguiente fragmento.
 
 ```js
-const res = await fetch(url, {  
-    method: "GET",
-    withCredentials: true,
-    headers: {
-      "X-Auth-Token": "",
-      "Content-Type": "application/json"
-    }
-  })
+const url = `https://exchange-rates.abstractapi.com/v1/live/?api_key=&base=${b}&target=${target}`
 ```
 
 ejecutar y/o compilar a conveniencia

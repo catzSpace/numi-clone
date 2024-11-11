@@ -20,14 +20,13 @@ fs.readFile('./src/fetch/input.txt', 'utf8', (err, data) => {
 let b = "USD"
 
 
-// const urls = `https://exchange-rates.abstractapi.com/v1/live/?api_key=f768b79aa08e48daade82fb9f2c8fab7&base=${base}&target=${target}`
-const url = `https://exchange-rates.abstractapi.com/v1/live/?api_key=&base=${b}`
+const url = `https://exchange-rates.abstractapi.com/v1/live/?api_key=&base=${b}&target=${target}`
 
 
 async function getData() {
 
   const res = await fetch(url, {  
-    method: "GET",
+    method: "GET"
   })
 
   const data = await res.json()
