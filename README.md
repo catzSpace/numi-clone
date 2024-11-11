@@ -15,7 +15,7 @@ y javascript
 
 ---
 
-uso: 
+# Uso: 
 
 instalar las dependencias tkinter, sympy
 
