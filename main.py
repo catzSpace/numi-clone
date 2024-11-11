@@ -94,7 +94,10 @@ def esc(event):
         #data[linea]['entrada'] = data[linea]['entrada'][:-1]
     
     else:
-        text += event.char
+        if event.char == '\x08':
+            text = text[:-1]
+        else:
+            text += event.char
         
 
 
