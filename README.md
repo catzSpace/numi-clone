@@ -6,11 +6,12 @@ y javascript
 
 ---
 
-![Screenshot_2024-11-10-10-40-36_1920x1080](https://github.com/user-attachments/assets/666a6f6a-d68a-405e-a2f1-64023e5ad71b)
+![Screenshot_2024-11-10-10-40-36_1920x1080](https://github.com/user-attachments/assets/6d7098e9-35e4-457e-b0fc-4b833130c10d)
+
 
 ---
 
-![Screenshot_2024-11-10-10-40-57_1920x1080](https://github.com/user-attachments/assets/cf96777e-21bf-4b1e-a5cb-3b67d39a2427)
+![Screenshot_2024-11-10-10-40-57_1920x1080](https://github.com/user-attachments/assets/76767f30-cc10-4083-9764-abd45bfb53dc)
 
 ---
 
