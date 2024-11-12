@@ -22,7 +22,7 @@ agregar la api key de acceso de la api Exchanges-Rates de [abstractApi](https://
 y ubicarla en el archivo fetch.js en el siguiente fragmento.
 
 ```js
-const url = `https://exchange-rates.abstractapi.com/v1/live/?api_key=&base=${b}`
+const url = `https://exchange-rates.abstractapi.com/v1/live/?api_key=&base=${base}`
 ```
 
 ejecutar y/o compilar a conveniencia
