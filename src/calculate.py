@@ -1,33 +1,40 @@
+import os
+import json
 from src.data import *
 from sympy import sympify
 
 def basicOperations():
 
     for i in data:
-        #if data[i]['entrada'][0].isnumeric():
-            
-            #start = data[i]['entrada'].find('\x08')
-            #data[i]['entrada'].replace(data[i]['entrada'][start],'',1)
             
         format = data[i]['entrada'].replace('\x08', '')
             
         try:
-            print(format)
+            
             out = sympify(format)
-            #print(out)
             data[i]['salida'] = round(out, 2)
-            print(data)
 
         except:
             pass
 
-        for code in codes:
-            if data[i]['entrada'][:3].upper() == code:
-                print('eureca')
+        start = data[i]['entrada'][:3].upper() 
+        end = data[i]['entrada'][-3:].upper()
+        
+        num = data[i]['entrada'][:-3]
+        num = num[3:]
 
-        #else:
-            #pass
-            #data[i]['salida'] = '\n'
+        if start in codes and end in codes:
+            
+            file = open("./src/fetch/input.txt", "w")
+            file.write(f'{start}{end}')
+            file.close()
 
+            # ejecutar fetch
+            os.system('node src/fetch/fetch.js')
 
-#basicOperations()
+            with open('./src/fetch/data/data.json', 'r') as j:
+                djson = json.load(j)
+            
+            change = djson['exchange_rates'][end]
+
+            data[i]['salida'] = f'${round(float(num)*change)}'

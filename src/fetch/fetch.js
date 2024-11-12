@@ -4,33 +4,16 @@ const fs = require('fs')
 //TODO 
 /* funcion para extraer la base y el target de un archivo txt */
 
-let base = ""
-let target = ""
-let response
+async function getData(base) {
 
-fs.readFile('./src/fetch/input.txt', 'utf8', (err, data) => {
-    if (err) {
-        console.error('Error al leer el archivo:', err);
-    } else {
-        console.log('Contenido del archivo:', data);
-        base = data.slice(0, 3);
-    }
-});
-
-let b = "USD"
-
-
-const url = `https://exchange-rates.abstractapi.com/v1/live/?api_key=&base=${b}&target=${target}`
-
-
-async function getData() {
+  let url = `https://exchange-rates.abstractapi.com/v1/live/?api_key=&base=${base}`
+  
 
   const res = await fetch(url, {  
     method: "GET"
   })
 
   const data = await res.json()
-  console.log(data)
 
   // sobreescribir archivo json con los nuevos datos
   const jsonData = JSON.stringify(data, null, 2);
@@ -42,8 +25,19 @@ async function getData() {
 
 }
 
-getData(url)
 
+// leer datos de conversion
+fs.readFile('./src/fetch/input.txt', 'utf8', (err, data) => {
+    if (err) {
+        console.error('Error al leer el archivo:', err);
+    } else {
+        let target = ''
+        let base = ''
 
+        console.log(data)
+        
+        let = base = data.slice(0, 3);
 
-// console.log('working from javascript')
+        getData(base)
+    }
+});

@@ -59,6 +59,7 @@ def switch():
 text = ''
 result = ''
 linea = 1
+opt = 0
 
 
 
@@ -68,6 +69,7 @@ def esc(event):
     global text
     global linea
     global result
+    global opt
 
     if event.char == '\r' or event.char == '\n':
         data.update({
@@ -76,9 +78,6 @@ def esc(event):
                 'salida': ''
             },
         })
-        
-        #print(data)
-        #print(text)
         
                 
         basicOperations()
@@ -89,9 +88,6 @@ def esc(event):
         
         text = ''
         linea += 1
-
-        #elif event.char == '\x08':
-        #data[linea]['entrada'] = data[linea]['entrada'][:-1]
     
     else:
         if event.char == '\x08':
