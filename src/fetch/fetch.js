@@ -1,9 +1,6 @@
 const fs = require('fs') 
 
 
-//TODO 
-/* funcion para extraer la base y el target de un archivo txt */
-
 async function getData(base) {
 
   let url = `https://exchange-rates.abstractapi.com/v1/live/?api_key=&base=${base}`
