@@ -6,12 +6,7 @@ y javascript
 
 ---
 
-![Screenshot_2024-11-10-10-40-36_1920x1080](https://github.com/user-attachments/assets/6d7098e9-35e4-457e-b0fc-4b833130c10d)
-
-
----
-
-![Screenshot_2024-11-10-10-40-57_1920x1080](https://github.com/user-attachments/assets/76767f30-cc10-4083-9764-abd45bfb53dc)
+![Screenshot_2024-11-11-19-08-32_1920x1080](https://github.com/user-attachments/assets/896f97f3-07d0-4f41-8e36-0cb6cc00df7b)
 
 ---
 
