@@ -20,21 +20,23 @@ def basicOperations():
         start = data[i]['entrada'][:3].upper() 
         end = data[i]['entrada'][-3:].upper()
         
+        num = ''
+        # Excluir letras
         num = data[i]['entrada'][:-3]
         num = num[3:]
 
-        if start in codes and end in codes:
+    if start in codes and end in codes:
+
+        file = open("./src/fetch/input.txt", "w")
+        file.write(f'{start}{end}')
+        file.close()
+
+        # ejecutar fetch
+        os.system('node src/fetch/fetch.js')
+
+        with open('./src/fetch/data/data.json', 'r') as j:
+            djson = json.load(j)
             
-            file = open("./src/fetch/input.txt", "w")
-            file.write(f'{start}{end}')
-            file.close()
+        change = djson['exchange_rates'][end]
 
-            # ejecutar fetch
-            os.system('node src/fetch/fetch.js')
-
-            with open('./src/fetch/data/data.json', 'r') as j:
-                djson = json.load(j)
-            
-            change = djson['exchange_rates'][end]
-
-            data[i]['salida'] = f'${round(float(num)*change)}'
+        data[i]['salida'] = f'${round(float(num)*change)}'
